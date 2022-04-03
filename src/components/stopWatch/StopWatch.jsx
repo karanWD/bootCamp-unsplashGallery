@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from "react"
+import Buttons from "../Buttons/Buttons";
+import Timer from "../Timer/Timer";
 
 const StopWatch = () => {
     const [timer, setTimer] = useState(0)
@@ -29,23 +31,8 @@ const StopWatch = () => {
 
     return (
         <div>
-            <h1>
-                {console.log(timer,Math.floor((timer/1000)%60),Math.floor((timer/1000)))}
-                {("0" + Math.floor((timer/(60*1000))%60)).slice(-2)}
-                <span>:</span>
-                {("0" + Math.floor((timer/1000)%60)).slice(-2)}
-                <span>:</span>
-                {("0" + Math.floor((timer/10)%100)).slice(-2)}
-            </h1>
-            {
-                active ?
-                    <>
-                        <button onClick={handlePause}>{pause ? "continue" : "pause"}</button>
-                        <button onClick={handleStop}>stop</button>
-                    </>
-                    :
-                    <button onClick={() => setActive(true)}>start</button>
-            }
+            <Timer timer={timer}/>
+            <Buttons active={active} setActive={setActive} pause={pause} pauseHandler={handlePause} stopHandler={handleStop}/>
         </div>
     )
 }
