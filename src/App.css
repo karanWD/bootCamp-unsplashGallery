@@ -1,4 +1,4 @@
-.App {
+.stopwatch {
   text-align: center;
   /*background-color:#111;*/
   background: url("images/bg.jpg");
@@ -12,7 +12,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-h1{
+.stopwatch h1{
   margin-top: 0;
   display: block;
   width: 100%;
@@ -26,16 +26,16 @@ h1{
   font-size: 24px;
   cursor: pointer;
 }
-.start{
+.stopwatch .start{
   background-color: #ff003a;
   color: white;
   transition: 0.4s;
 }
-.start:hover{
+.stopwatch .start:hover{
   background-color: #ff003a;
   padding: 15px 80px;
 }
-.stop{
+.stopwatch .stop{
   background-color: #ff003a;
   color: white;
   margin-left:5px

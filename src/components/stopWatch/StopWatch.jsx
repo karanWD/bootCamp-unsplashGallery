@@ -30,7 +30,7 @@ const StopWatch = () => {
     }
 
     return (
-        <div>
+        <div className={`stopwatch`}>
             <Timer timer={timer}/>
             <Buttons active={active} setActive={setActive} pause={pause} pauseHandler={handlePause} stopHandler={handleStop}/>
         </div>
