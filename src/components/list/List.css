@@ -7,11 +7,20 @@
     right: 0;
     z-index: 100;
 }
+.list-container span{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    /*font-weight: bold;*/
+    font-size: 12px;
+}
 .list-container>div{
     width:10%;
     height: 150px;
     overflow: hidden;
     background-color: black;
+    position: relative;
 }
 .list-container>div img{
     width: 100%;

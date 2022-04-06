@@ -32,7 +32,11 @@ const StopWatch = () => {
     return (
         <div className={`stopwatch`}>
             <Timer timer={timer}/>
-            <Buttons active={active} setActive={setActive} pause={pause} pauseHandler={handlePause} stopHandler={handleStop}/>
+            <Buttons active={active}
+                     setActive={setActive}
+                     pause={pause}
+                     pauseHandler={handlePause}
+                     stopHandler={handleStop}/>
         </div>
     )
 }
